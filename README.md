@@ -120,3 +120,13 @@ The Skill Tier Classifier uses the following tier system:
 - S: Mastery
 
 Each tier represents a different level of proficiency, with E being the lowest and S being the highest. The application asks a series of questions to determine the appropriate tier for each skill. The questions become progressively more challenging as you move up the tiers.
+
+## Additional details
+
+Sometimes it might be unobvious how to break skill familiarity levels down into specific tiers. You can use LLMs for guidance. Example prompt:
+
+```GPT-4o
+There are 6 skill proficiency tiers: S (Mastery), A (Advanced), B (Proficient), C (Competent), D (Basic), and E (Novice).
+SKILL:="___".
+Outline skill proficiency levels for SKILL.
+```
