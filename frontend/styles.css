@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#app {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+}
+
+.tier-letter {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Approximately 2cm on most screens */
+    margin-top: 2rem;
+}
+
+.question {
+  margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 2rem;
+	height: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:first-child {
+    background-color: #ff4136;
+    color: white;
+}
+
+button:last-child {
+    background-color: #2ecc40;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        gap: 1rem; /* Reduced gap for smaller screens */
+    }
+}
